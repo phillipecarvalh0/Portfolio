@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html lang="tp-BR">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="portfolio.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
-      <title>Contato</title>
-   </head>
-   <body>
-      <header>
-         <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            Menu
-            <span id="hamburger"></span>
-            </button>
-            <ul id="menu">
-               <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-               <li><a href="http://127.0.0.1:5500/index.html#sobreMim">Sobre Mim</a></li>
-               <li><a href="http://127.0.0.1:5500/index.html#cursos">Cursos</a></li>
-               <li><a href="http://127.0.0.1:5500/index.html#projetos">Projetos</a></li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="portfolio.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
+
+        <title>Portfólio</title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li><a href="#sobreMim">Sobre Mim</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="http://127.0.0.1:5500/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <img id="fotoPerfil" src="img/phillipe.jpg" alt="" />
+            <h1>PRAZER, SOU PHILLIPE CAMPOS DE CARVALHO!</h1>
+            <h2>BEM-VINDO, AO MEU PORTFÓLIO!</h2>
+        </div>
+        <div class="section1" id="sobreMim">
+            <h3>SOBRE MIM</h3>
+            <p class="section1">
+                Tenho 27 anos e estou cursando o 3º Semestre de Análise e Desenvolvimento de Sistemas pelo Centro Universitário ENIAC em Guarulhos-SP.
+                <br />
+                Através de projetos e aprendizados no percurso da faculdade, acabei me familiarizando com desenvolvimento de sites; E em Janeiro de 2022, particularmente, iniciei os estudos em desenvolvimento (Front-End) pela plataforma de
+                estudos
+                <a href="https://www.alura.com.br/"><strong>Alura</strong></a>, bem como pelo canal <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo"><strong>Curso em Vídeo</strong></a>, do Youtube. Gosto muito de aprender e encarar
+                desafios. Sobretudo, estou à procura de uma oportunidade profissional em desenvolvimento WEB. Gostaria de poder compartilhar do meu conhecimento e das minhas habilidades. Para que juntos possamos ir à diante!
+            </p>
+        </div>
+        <div class="section2" id="cursos">
+            <h3>CURSOS</h3>
+            <ul>
+                <li><a href="">Análise e Desenvolvimento de Sistemas (Em Breve)</a></li>
+                <li>
+                    <a href="https://cursos.alura.com.br/user/phillipecarvalho/fullCertificate/2a91ca64031e875809fd0beddcb26226">HTML5 e CSS3</a>
+                </li>
+                <li><a href="">Lógica de programação</a></li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">JavaScript</a></li>
+                <li><a href="">ReactJS</a></li>
             </ul>
-         </nav>
-      </header>
-      <div class="section4" id="contato">
-         <h3>CONTATO</h3>
-         <main>
-            <form>
-               <label for="nomesobrenome">Nome completo</label>
-               <input type="text" id="nomesobrenome" class="input-padrao" required />
-               <label for="nomesobrenome">Nome da empresa</label>
-               <input type="text" id="empresa" class="input-padrao" required />
-               <label for="email">Email</label>
-               <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com" />
-               <label for="telefone">Telefone</label>
-               <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX" />
-               <label for="mensagem">Mensagem</label>
-               <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-               <input id="botaoForm" type="submit" value="Enviar formulário" />
-            </form>
-            <p>Telefone: (11)98412-5033</p>
-            <a id="email" href="mailto:phillipecamposcarvalho@gmail.com">phillipecamposcarvalho@gmail.com</a>
-         </main>
-         <div>
-            <a href="https://api.whatsapp.com/send?phone=55(11)984125033"><img src="img/whatsapp.png" alt="whatsapp" /></a>
-            <a href="https://github.com/phillipecarvalho"><img src="img/github.png" alt="github" /></a>
-            <a href="https://www.linkedin.com/in/phillipecarvalh0/"><img src="img/linkedin.png" alt="linkedin" /></a>
-         </div>
-         <a id="linkTopo" href="#">&#9650;</a>
-      </div>
-      <footer>
-         <p id="copyright">&copy; Copyright Phillipe Carvalho 2022</p>
-      </footer>
-      <script src="portfolio.js"></script>
-   </body>
+        </div>
+        <div class="section3" id="projetos">
+            <h3>PROJETOS</h3>
+            <p>NOVOS PROJETOS EM BREVE</p>
+        </div>
+        <div class="section4" id="contato">
+                <p>Telefone: (11)98412-5033</p>
+                <a id="email" href="mailto:phillipecamposcarvalho@gmail.com">phillipecamposcarvalho@gmail.com</a>
+            </main>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=55(11)984125033"><img src="img/whatsapp.png" alt="whatsapp" /></a>
+                <a href="https://github.com/phillipecarvalho"><img src="img/github.png" alt="github" /></a>
+                <a href="https://www.linkedin.com/in/phillipecarvalh0/"><img src="img/linkedin.png" alt="linkedin" /></a>
+            </div>
+                <a id="linkTopo" href="#">&#9650;</a>
+        </div>
+        <footer>
+            <p id="copyright">&copy; Copyright Phillipe Carvalho 2022</p>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
 </html>
